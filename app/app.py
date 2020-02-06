@@ -14,7 +14,7 @@ def setup_routes(app):
         web.post('/', echo)
     ])
 
-def make_app(log_level=logging.DEBUG):
+def make_app(log_level=logging.WARN):
     logging.basicConfig(level=log_level)
     app = web.Application()
     setup_routes(app)
